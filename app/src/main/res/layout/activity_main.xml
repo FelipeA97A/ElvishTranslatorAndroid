@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVwNumeros"
+        android:text="Números"
+        android:paddingVertical="15dp"
+        android:paddingLeft="10dp"
+        android:background="#CDDC38"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVwFamilia"
+        android:text="Familia"
+        android:paddingVertical="15dp"
+        android:paddingLeft="10dp"
+        android:background="#785548"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVwColores"
+        android:text="Colores"
+        android:paddingVertical="15dp"
+        android:paddingLeft="10dp"
+        android:background="#CDDC38"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtVwFrases"
+        android:text="Frases"
+        android:paddingVertical="15dp"
+        android:paddingLeft="10dp"
+        android:background="#785548"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

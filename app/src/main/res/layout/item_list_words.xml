@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/num1"
+        android:padding="5dp"
+        android:layout_weight="4"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/spanishWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_toRightOf="@id/image"
+        android:paddingVertical="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="#160F29"/>
+
+    <TextView
+        android:id="@+id/elvishWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingVertical="5dp"
+        android:paddingLeft="10dp"
+        android:text="TextView"
+        android:layout_below="@+id/spanishWord"
+        android:layout_toRightOf="@id/image"
+        android:textColor="#160F29"/>
+
+</RelativeLayout>
