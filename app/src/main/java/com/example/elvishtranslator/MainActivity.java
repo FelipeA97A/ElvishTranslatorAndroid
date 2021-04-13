@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(phrase);
     }
 
-    public void timerTest() {
+    /*public void timerTest() {
         Timer temporizador = new Timer();
-    }
+    }*/
 }

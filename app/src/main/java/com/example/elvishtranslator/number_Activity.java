@@ -4,11 +4,16 @@ package com.example.elvishtranslator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class number_Activity extends AppCompatActivity {
+public class number_Activity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+
+    ArrayList<Word> numbers = new ArrayList<Word>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +36,12 @@ public class number_Activity extends AppCompatActivity {
         ListView numberList = (ListView) findViewById(R.id.mainContainer);
         numberList.setAdapter(adapter);*/
 
-        ArrayList<Word> numbers = setWords();
+        numbers = setWords();
 
         ListView numberList = (ListView) findViewById(R.id.numberContainer);
         WordAdapter wordAdapter = new WordAdapter(this, 0, numbers);
         numberList.setAdapter(wordAdapter);
+        numberList.setOnItemClickListener(this);
     }
 
     public ArrayList<Word> setWords() {
@@ -53,4 +59,9 @@ public class number_Activity extends AppCompatActivity {
         return numbers;
     }
 
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
+        Toast info = Toast.makeText(this, "Haciendo click en: " + numbers.get(i).getSpanishWord() + ".", Toast.LENGTH_SHORT);
+        info.show();
+    }
 }
