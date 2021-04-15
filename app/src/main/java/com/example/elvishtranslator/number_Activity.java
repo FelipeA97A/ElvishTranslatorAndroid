@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
 
@@ -42,6 +43,14 @@ public class number_Activity extends AppCompatActivity implements AdapterView.On
         WordAdapter wordAdapter = new WordAdapter(this, 0, numbers);
         numberList.setAdapter(wordAdapter);
         numberList.setOnItemClickListener(this);
+
+        /*Toolbar toolbar;
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);*/
+
+        Toolbar toolbar;
+        toolbar = findViewById(R.id.toolbarNum);
+        setSupportActionBar(toolbar);
     }
 
     public ArrayList<Word> setWords() {
