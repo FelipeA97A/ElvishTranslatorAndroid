@@ -28,7 +28,7 @@ public class color_Activity extends AppCompatActivity implements AdapterView.OnI
         ArrayList<Word> colors = new ArrayList<Word>();
         colors.add(new Word("Rojo", "Caran", R.drawable.red));
         colors.add(new Word("Carmín", "Carnin", R.drawable.carmin));
-        colors.add(new Word("Azul Marino", "Luin", R.drawable.deepblue));
+        colors.add(new Word("Azul Marino", "Luin", R.drawable.darkblue));
         colors.add(new Word("Azul", "Elu", R.drawable.blue));
         colors.add(new Word("Amarillo", "Malen", R.drawable.yellow));
         colors.add(new Word("Verde", "Calen", R.drawable.green));
