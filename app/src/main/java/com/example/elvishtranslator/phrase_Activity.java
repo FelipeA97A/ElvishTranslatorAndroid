@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import java.util.ArrayList;
 
@@ -24,19 +25,20 @@ public class phrase_Activity extends AppCompatActivity implements AdapterView.On
           WordAdapter wordAdapter = new WordAdapter(this, 0, phrases);
           phraseList.setAdapter(wordAdapter);
           phraseList.setOnItemClickListener(this);
+
     }
 
       public ArrayList<Word> setPhrases() {
           ArrayList<Word> sentences = new ArrayList<Word>();
-          sentences.add(new Word("Buenos días", "Alassea Ree", R.drawable.num1));
-          sentences.add(new Word("¿Quién eres?", "Man nalye?", R.drawable.num1));
-          sentences.add(new Word("¿Cómo te llamas?", "Man naa esselya?", R.drawable.num1));
-          sentences.add(new Word("Ven y siéntate con nosotros", "Tula ar o elme haara", R.drawable.num1));
-          sentences.add(new Word("Buena suerte", "Annali len", R.drawable.num1));
-          sentences.add(new Word("Hasta pronto", "Tenna rato", R.drawable.num1));
-          sentences.add(new Word("Nos vemos", "Enomentuvalve", R.drawable.num1));
-          sentences.add(new Word("Felices sueños", "Alassie oloori", R.drawable.num1));
-          sentences.add(new Word("¡Vuelve pronto!", "Entula rato!", R.drawable.num1));
+          sentences.add(new Word("Buenos días", "Alassea Ree", R.drawable.book));
+          sentences.add(new Word("¿Quién eres?", "Man nalye?", R.drawable.book));
+          sentences.add(new Word("¿Cómo te llamas?", "Man naa esselya?", R.drawable.book));
+          sentences.add(new Word("Ven y siéntate con nosotros", "Tula ar o elme haara", R.drawable.book));
+          sentences.add(new Word("Buena suerte", "Annali len", R.drawable.book));
+          sentences.add(new Word("Hasta pronto", "Tenna rato", R.drawable.book));
+          sentences.add(new Word("Nos vemos", "Enomentuvalve", R.drawable.book));
+          sentences.add(new Word("Felices sueños", "Alassie oloori", R.drawable.book));
+          sentences.add(new Word("¡Vuelve pronto!", "Entula rato!", R.drawable.book));
           return sentences;
       }
 

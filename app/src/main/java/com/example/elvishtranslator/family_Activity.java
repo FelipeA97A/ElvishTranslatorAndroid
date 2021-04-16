@@ -26,12 +26,12 @@ public class family_Activity extends AppCompatActivity implements AdapterView.On
     }
     public ArrayList<Word> setWords() {
         ArrayList<Word> family = new ArrayList<Word>();
-        family.add(new Word("Madre", "Naneth", R.drawable.num1));
-        family.add(new Word("Padre" , "Adanadar", R.drawable.num1));
-        family.add(new Word("Hijo", "Ionn", R.drawable.num1));
-        family.add(new Word("Hija", "Sell", R.drawable.num1));
-        family.add(new Word("Hermano", "Muindor", R.drawable.num1));
-        family.add(new Word("Hermana", "Muinthel", R.drawable.num1));
+        family.add(new Word("Madre", "Naneth", R.drawable.woman));
+        family.add(new Word("Padre" , "Adanadar", R.drawable.man));
+        family.add(new Word("Hijo", "Ionn", R.drawable.son));
+        family.add(new Word("Hija", "Sell", R.drawable.daughter));
+        family.add(new Word("Hermano", "Muindor", R.drawable.brother));
+        family.add(new Word("Hermana", "Muinthel", R.drawable.sister));
         return family;
     }
 

@@ -7,5 +7,4 @@
     tools:context=".phrase_Activity"
     android:orientation="vertical"
     android:id="@+id/phraseContainer">
-
 </ListView>

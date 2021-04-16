@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toolbar;
 
 import org.w3c.dom.Text;
 
@@ -14,11 +16,14 @@ import java.util.Timer;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private static int splashTimer = 4000;
+
     TextView number, family, color, phrase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         number = findViewById(R.id.txtVwNumeros);
         family = findViewById(R.id.txtVwFamilia);
         color = findViewById(R.id.txtVwColores);
